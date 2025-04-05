@@ -149,7 +149,7 @@
 
 .background-container {
     position: relative;
-    background: url('/image/фоновые плашки.svg') no-repeat center center;
+    background: url('/image/fonovie_plashki.svg') no-repeat center center;
     background-size: cover;
     display: flex;
     height: 100vh;
@@ -191,7 +191,7 @@
 }
 
 .background_image_product{
-    background-image: url(image/Rectangle\ 11.svg);
+    background-image: url(image/Rectangle11.svg);
     background-repeat: no-repeat;
     background-size: 90vw 400px;
     background-position-y: center;
@@ -275,14 +275,14 @@
   }
   
   .row:nth-child(odd)::before {
-    background-image: url(image/Rectangle\ 11.svg);
+    background-image: url(image/Rectangle11.svg);
     left: 20%;
     transform: translateX(-15%);
     background-position: right center;
   }
   
   .row:nth-child(even)::before {
-    background-image: url(image/Rectangle\ 10.svg);
+    background-image: url(image/Rectangle10.svg);
     left: -20%;
     transform: translateX(-5%);
     background-position: left center;
