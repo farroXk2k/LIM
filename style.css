@@ -149,7 +149,7 @@
 
 .background-container {
     position: relative;
-    background: url('/image/fonovieplashki.svg') no-repeat center center;
+    background: url('/image/ebuchiepkashki.svg') no-repeat center center;
     background-size: cover;
     display: flex;
     height: 100vh;
@@ -640,23 +640,5 @@
         margin-top: 3vh !important;
         margin-left: 0 !important;
     }
-
-    body {
-        overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
-        width: 100%; /* Фиксируем ширину */
-      }
-    
-      /* Дополнительно: исправляем элементы, которые могут выходить за границы */
-      img, iframe, video, .container, .section {
-        max-width: 100%; /* Ограничиваем максимальную ширину */
-        height: auto; /* Сохраняем пропорции */
-      }
-    
-      /* Если проблема в padding/margin */
-      .some-element {
-        box-sizing: border-box; /* Учитываем padding в общей ширине */
-        padding-left: 10px;
-        padding-right: 10px;
-      }
 }
 
