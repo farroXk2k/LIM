@@ -149,7 +149,7 @@
 
 .background-container {
     position: relative;
-    background: url('/image/fonovie_plashki.svg') no-repeat center center;
+    background: url('/image/fonovieplashki.svg') no-repeat center center;
     background-size: cover;
     display: flex;
     height: 100vh;
