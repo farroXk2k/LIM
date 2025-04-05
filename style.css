@@ -79,7 +79,7 @@
     left: -20px;
     right: -20px;
     bottom: -20px;
-    background: url('/image/image-Photoroom.png') no-repeat center center;
+    background: url('/image/image-Photoroom1.svg') no-repeat center center;
     background-size: cover;
     filter: blur(30px);
     z-index: -1;
@@ -485,10 +485,10 @@
     display: flex;
 }
 
-@media (max-width: 992px) {
-    .logo_header{
-        height: 30px;
+@media (max-width: 768px) {
+    .logo_header{ 
         display: flex;
+        height: 43px;
         justify-content: center;
     }
 
@@ -498,16 +498,165 @@
     
     .email{
         display: none;
+        height: 22px;
     }
 
     .mail{
+        position: absolute;
         display: flex;
         justify-content: left;
+        transform: translate(-140%,0);
+        gap: 0px;
     }
 
     .card-image{
         transform: translate(40%,-10%);
     }
 
+    .card{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footer img {
+        order: 1;
+        height: 42px;
+        margin-bottom: 1vh;
+    }
+    
+    .footer_p {
+        order: 2;
+        margin-top: 0;
+        font-size: 11px;
+    }
+
+    .questions {
+        padding: 4vh 5vw;
+        text-align: center;
+    }
+    
+    .remaining_questions {
+        margin-bottom: 3vh;
+    }
+
+    .remaining_questions >  img {
+        height: 32px;
+    }
+    
+    
+    .remaining_questions_p {
+        font-size: 24px;
+    }
+    
+    .send_request {
+        flex-direction: column;
+        align-items: center;
+        gap: 0 !important;
+    }
+    
+    .send_request_p {
+        font-size: 18px;
+        line-height: 120%;
+        margin-bottom: 3vh;
+        text-align: center;
+    }
+    
+    .vert_line {
+        display: none;
+    }
+    
+    .send_request_button {
+        font-size: 16px;
+        padding: 14px 26px;
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .send_request_button p {
+        margin: 0;
+    }
+
+    .cooperate_with_us {
+        margin-bottom: 5vh;
+        padding: 0 5vw;
+    }
+    
+    .cooperate_with_us_name {
+        margin-bottom: 5vh;
+    }
+    
+    .p_cooperate_with_us {
+        font-size: 28px;
+        margin-right: 1.5vh;
+    }
+    
+    .slider {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0 5vw;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .company {
+        flex: 0 0 80%;
+        margin-right: 4vw;
+        scroll-snap-align: center;
+    }
+    
+    .company:nth-child(n+4) {
+        display: none;
+    }
+    
+    .company:nth-child(3) {
+        margin-right: 0;
+    }
+    
+    .container_in_company {
+        width: 100%;
+        height: 160px;
+        max-width: 160px;
+        margin: 0 auto;
+    }
+    
+    .name_company {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .sliders_button {
+        display: none;
+    }
+    
+    .container_in_company img {
+        width: 80%;
+        height: auto;
+        margin-top: 3vh !important;
+        margin-left: 0 !important;
+    }
+
+    body {
+        overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+        width: 100%; /* Фиксируем ширину */
+      }
+    
+      /* Дополнительно: исправляем элементы, которые могут выходить за границы */
+      img, iframe, video, .container, .section {
+        max-width: 100%; /* Ограничиваем максимальную ширину */
+        height: auto; /* Сохраняем пропорции */
+      }
+    
+      /* Если проблема в padding/margin */
+      .some-element {
+        box-sizing: border-box; /* Учитываем padding в общей ширине */
+        padding-left: 10px;
+        padding-right: 10px;
+      }
 }
 
