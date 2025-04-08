@@ -12,7 +12,7 @@
     align-items: center;
     max-width: 90%;
     margin: 0 auto;
-    gap: 0; 
+    gap: 0;
 }
 
 .nav-links {
@@ -20,7 +20,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 0; /
+    gap: 0;
 }
 
 .nav-link {
@@ -29,12 +29,12 @@
     font-size: 18px;
     transition: color 0.3s;
     font-family: "Montserrat", serif;
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 .logo_header {
     height: 40px;
-    margin-right: 30px; 
+    margin-right: 30px;
 }
 
 .mail {
@@ -50,7 +50,6 @@
     font-size: 18px;
     white-space: nowrap;
     color: #141414;
-
 }
 
 .svg {
@@ -66,7 +65,7 @@
     width: 100%;
     overflow: hidden;
     border: 2px solid #202020;
-    padding: 20px 0 10px 20px;
+    padding: 50px;
     z-index: 1;
     min-height: 400px;
     background: white;
@@ -92,9 +91,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
-    position: relative;
     height: 100%;
+    position: relative;
 }
 
 .text-content {
@@ -137,14 +135,21 @@
 
 .card-image {
     position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 110%;
-    width: auto;
-    object-fit: contain;
+    max-width: 45%;
+    height: auto;
     z-index: 2;
-    border-radius: 0 15px 15px 0;
+    display: flex;
+    margin-left: 15%;
+}
+
+.card-image img {
+    width: 200%;
+    height: auto;
+    display: block;
+}
+
+.request {
+    margin-top: 30px;
 }
 
 .background-container {
@@ -179,7 +184,7 @@
     z-index: -1;
 }
 
-.prices_p{
+.prices_p {
     font-family: 'Unbounded';
     font-weight: 566;
     font-size: 48px;
@@ -190,7 +195,7 @@
     align-items: center;
 }
 
-.background_image_product{
+.background_image_product {
     background-image: url(image/Rectangle11.svg);
     background-repeat: no-repeat;
     background-size: 90vw 400px;
@@ -202,12 +207,11 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
-    width: 80vw; /* Ограничиваем ширину */
-    margin: 0 auto; /* Центрируем */
-  }
-  
-  /* Карточка продукта */
-  .product_card {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.product_card {
     position: relative;
     display: flex;
     flex-flow: column;
@@ -216,7 +220,7 @@
     border: 1px solid black;
     background-color: #D9D9D9;
     border-radius: 16px;
-  }
+}
 
 .product_card > img {
     height: 210%;
@@ -255,15 +259,15 @@
     width: 80vw;
     margin: 0 auto 7vh;
     box-sizing: border-box;
-  }
-  
-  .row:last-child {
+}
+
+.row:last-child {
     display: flex;
     justify-content: center;
     gap: 30px;
-  }
-  
-  .row::before {
+}
+
+.row::before {
     content: '';
     position: absolute;
     top: 7vh;
@@ -272,27 +276,27 @@
     height: 16.8vh;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  .row:nth-child(odd)::before {
+}
+
+.row:nth-child(odd)::before {
     background-image: url(image/Rectangle11.svg);
     left: 20%;
     transform: translateX(-15%);
     background-position: right center;
-  }
-  
-  .row:nth-child(even)::before {
+}
+
+.row:nth-child(even)::before {
     background-image: url(image/Rectangle10.svg);
     left: -20%;
     transform: translateX(-5%);
     background-position: left center;
-  }
-  
-  body {
+}
+
+body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-  }
+}
 
 .advantages {
     border: 5px solid #141414;
@@ -309,6 +313,11 @@
     letter-spacing: 0%;
 }
 
+.advantages_name{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
 .p_advantage {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -316,21 +325,21 @@
     line-height: 100%;
     letter-spacing: 0%;
     color: #141414;
-    text-align: left; 
+    text-align: left;
     width: 100%;
 }
 
-.advantage_p{
+.advantage_p {
     align-items: center;
     margin-top: 4vh;
 }
 
-.advantage_img{
+.advantage_img {
     width: auto;
     height: 200px;
 }
 
-.p_license{
+.p_license {
     font-family: 'Unbounded';
     font-weight: 566;
     font-size: 48px;
@@ -339,7 +348,7 @@
     margin-right: 2vw;
 }
 
-.work_in_law{
+.work_in_law {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 32px;
@@ -351,19 +360,15 @@
     margin-top: 2vh;
 }
 
-.img_license{
+.img_license {
     border: 3px solid #141414;
     border-radius: 20px;
     border-width: 3px;
     width: 417px;
     height: 643px;
-
 }
 
-
-
-
-.link_to_doc{
+.link_to_doc {
     font-family: Montserrat;
     font-weight: 400;
     font-size: 32px;
@@ -378,10 +383,9 @@
     justify-content: center;
     margin-top: 10vh;
     margin-bottom: 10vh;
-
 }
 
-.p_cooperate_with_us{
+.p_cooperate_with_us {
     font-family: 'Unbounded';
     font-weight: 566;
     font-size: 48px;
@@ -391,29 +395,30 @@
 }
 
 .container_in_company {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 220px;
     height: 220px;
     border: 3px solid #E55A29;
     border-radius: 40px;
     background: #ECECEC;
-    padding: 15px; /* Добавляем отступ для безопасности */
+    padding: 15px;
 }
 
 .container_in_company img {
-    max-width: 80% !important; /* Ограничиваем размер */
-    max-height: 80% !important;
-    object-fit: contain !important; /* Сохраняем пропорции */
-    margin: 0 !important; /* Убираем все отступы */
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    margin: 0;
 }
-.sliders_button{
+
+.sliders_button {
     border: 0;
     background: 0;
 }
 
-.name_company{
+.name_company {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 32px;
@@ -423,11 +428,11 @@
     margin-top: 1vh;
 }
 
-.company{
+.company {
     margin-right: 3vw;
 }
 
-.remaining_questions_p{
+.remaining_questions_p {
     font-family: 'Unbounded';
     font-weight: 566;
     font-size: 48px;
@@ -436,36 +441,33 @@
     margin-right: 2vw;
 }
 
-.remaining_questions{
+.remaining_questions {
     margin-bottom: 5vh;
 }
 
-.questions{
+.questions {
     padding-top: 2vh;
     padding-bottom: 8vh;
 }
 
-.send_request_p{
+.send_request_p {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 32px;
     line-height: 100%;
     letter-spacing: 0%;
     color: #202020;
-
 }
 
-.vert_line{
+.vert_line {
     opacity: 0.2;
     border-width: 2px;
-    border: 2px solid #1C1DD0
-
+    border: 2px solid #1C1DD0;
 }
 
-.send_request_button{
+.send_request_button {
     background: linear-gradient(90deg, #1C1DD0 0%, #3F40FC 47%, #1C1DD0 100%);
-    box-shadow: 0px 5px 8.4px 0px #3132F4 inset;
-    box-shadow: 0px 5px 0px 0px #0B0C88;
+    box-shadow: 0px 5px 8.4px 0px #3132F4 inset, 0px 5px 0px 0px #0B0C88;
     border-radius: 10px;
     font-family: 'Unbounded';
     font-weight: 566;
@@ -476,10 +478,9 @@
     border: 0;
     padding-left: 2vw;
     padding-right: 2vw;
-
 }
 
-.footer_p{
+.footer_p {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 24px;
@@ -494,157 +495,251 @@
     display: flex;
 }
 
-
-
-
 @media (max-width: 768px) {
-    .logo_header{ 
-        display: flex;
-        height: 43px;
-        justify-content: center;
-    }
-
-    .nav-links{
-        display: none;
+    .header {
+        padding: 12px 0;
     }
     
-    .email{
+    .nav-container {
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .nav-links,
+    .email {
         display: none;
-        height: 22px;
     }
 
-    .mail{
-        position: absolute;
-        display: flex;
-        justify-content: left;
-        transform: translate(-140%,0);
-        gap: 0px;
-    }
-
-    .card-image{
-        transform: translate(40%,-10%);
-    }
-
-    .card{
-        display: flex;
-        justify-content: center;
-    }
-
-    .footer {
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .footer img {
+    .mail {
         order: 1;
-        height: 42px;
-        margin-bottom: 1vh;
-    }
-    
-    .footer_p {
-        order: 2;
-        margin-top: 0;
-        font-size: 11px;
+        gap: 3px;
     }
 
-    .questions {
-        padding: 4vh 5vw;
-        text-align: center;
+    .logo_header {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 50px;
+        margin-left: 12vw;
+        z-index: 1;
     }
-    
-    .remaining_questions {
+
+    .mobile-menu-btn {
+        order: 3;
+        display: block;
+        padding: 8px;
+        background: none;
+        border: none;
+        z-index: 2;
+        margin-right: 7vw;
+    }
+
+    .svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .line{
+        margin-top: 3vh;
         margin-bottom: 3vh;
+        width: 80%;
     }
 
-    .remaining_questions >  img {
-        height: 32px;
+    .card {
+        max-width: 80vw;
+        min-height: auto;
+        padding: 10px;
+        margin: 10px auto;
     }
-    
-    
-    .remaining_questions_p {
-        font-size: 24px;
-    }
-    
-    .send_request {
+
+    .card-content {
         flex-direction: column;
-        align-items: center;
-        gap: 0 !important;
+        padding: 15px;
     }
-    
-    .send_request_p {
-        font-size: 18px;
-        line-height: 120%;
-        margin-bottom: 3vh;
-        text-align: center;
+
+    .text-content {
+        order: 1;
+        width: 100%;
+        margin-bottom: 0px;
     }
-    
-    .vert_line {
+
+    .heading {
+        font-size: 28px;
+        margin-bottom: 15px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .description {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .card-image {
+        order: 3;
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        transform: translate(22%,40%);
+    }
+
+    .request {
+        width: 100%;
+        order: 2;
+        height: 7vh;
+        margin-top: 50%;
+    }
+
+    .products_grid {
+        width: 95vw;
+        margin-top: 10vh;
+    }
+
+    .product_card {
+        width: 100%;
+        height: 200px;
+    }
+
+    .background-container{
+        width: auto;
+        height: 100%;
+        margin-top: 3vh;
+    }
+
+    .products_grid{
+        margin-top: 4vh;
+    }
+
+    .row:last-child {
         display: none;
     }
-    
-    .send_request_button {
+
+    .products_grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .products_name > img {
+        width: auto;
+        height: 40;
+    }
+
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 95%;
+        padding: 20px 0;
+        margin-bottom: 0;
+    }
+
+    .product_card > p{
+        transform: translate(0,45%);
         font-size: 16px;
-        padding: 14px 26px;
+        border: 0.5px solid #141414;
+    }
+
+    .prices_p{
+        font-size: 28px;
+    }
+
+    .advantages {
+        width: 80%;
+        padding: 10px;
+        border-radius: 50px;
+    }
+
+    .first_row_advantages {
+        grid-template-columns: 1fr;
+        gap: 30px;
         width: 100%;
-        max-width: 280px;
+        margin-bottom: 30px;
     }
-    
-    .send_request_button p {
+
+    .first_row_advantages:last-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .p_advantage {
+        max-width: 90%;
         margin: 0;
+        font-size: 12px;
+        padding: 0 5px;
     }
-    
-    .cooperate_with_us_name {
-        flex-wrap: nowrap; /* Запрещаем перенос элементов */
+
+    .p_advantages {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .advantage {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .advantage_img {
+        height: 130px;
+    }
+
+    .advantage_img img {
+        max-width: 100px;
+    }
+
+    .first_row_advantages .advantage:nth-child(n+3) {
+        display: none;
+    }
+
+    .advantages_name{
+        margin-top: 3vh;
         margin-bottom: 5vh;
     }
 
-    .p_cooperate_with_us {
-        font-size: 24px;
-        white-space: nowrap; /* Запрещаем перенос текста */
-        margin-right: 15px;
+    .advantages_name > img {
+        height: auto;
+        width: 40px;
+        padding: 10px;
     }
 
-    /* Скрываем две компании */
-    .company:nth-child(3),
-    .company:nth-child(4) {
-        display: none;
+    .licenses {
+        padding: 20px 15px;
     }
 
-    .slider { 
-        gap: 15px; /* Расстояние между элементами */
+    .license {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .p_license {
+        font-size: 20px;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .license img {
+        width: 50px;
+        height: auto;
+    }
+
+    .work_in_law {
+        font-size: 16px;
+        text-align: center;
         padding: 0 20px;
     }
 
-
-    .company {
-        margin-right: 0;
-        transform: scale(0.9); /* Уменьшаем размер блоков */
+    .licenses_imgs {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
     }
 
-    .name_company {
-        font-size: 18px;
-        margin-top: 10px;
-    }
-
-    .sliders_button {
-        display: flex !important;
-        align-items: center !important;
-        padding: 5px !important;
-    }
-
-    .container_in_company {
-        width: 150px;
-        height: 150px;
-        padding: 10px;
-        border-radius: 25px;
-    }
-
-    .container_in_company img {
-        max-width: 90% !important;
-        max-height: 90% !important;
-    }
-
-    /* Скрываем третий элемент лицензии */
     .licenses_img:nth-child(3) {
         display: none;
     }
@@ -653,117 +748,241 @@
         display: none;
     }
 
-    /* Настраиваем отображение двух элементов */
-    .licenses_imgs {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    /* Адаптация размеров изображений */
     .img_license {
-        width: 300px !important;
-        height: auto !important;
-        aspect-ratio: 417/643; /* Сохраняем оригинальные пропорции */
-    }
-
-    /* Адаптация текстовых элементов */
-    .p_license {
-        font-size: 32px;
-        margin-right: 15px;
-    }
-
-    .work_in_law {
-        font-size: 20px;
-        text-align: center;
-        padding: 0 15px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 15px;
+        margin: 0 10px;
     }
 
     .link_to_doc {
-        font-size: 18px;
-        margin: 5vh 0;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 25px;
     }
 
-    /* Центрируем заголовок с иконкой */
-    .license img {
-        width: 40px;
+    .cooperate_with_us {
+        padding: 0 15px;
+        margin-bottom: 5vh;
+        overflow: hidden;
+    }
+
+    .cooperate_with_us_name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4vh;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    .cooperate_with_us_name > img{
+        width: auto;
+        height: 50px;
+    }
+    .p_cooperate_with_us {
+        font-size: clamp(18px, 5vw, 24px);
+        margin-right: 10px;
+    }
+
+    .slider {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        gap: 40px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .sliders_button {
+        margin: 0;
+        padding: 2vw;
+        flex: 0 0 15%;
+        max-width: 70px;
+        margin-right: 0;
+    }
+
+    .sliders_button img {
+        width: 100%;
         height: auto;
     }
 
-    .advantages {
-        width: 95%;
-        border-radius: 30px;
-        margin: 5vh auto;
-        padding: 15px;
+    .company {
+        flex: 0 0 25%;
+        margin: 0;
+        min-width: 0;
     }
 
-    .first_row_advantages {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        gap: 15px !important;
-        justify-content: center !important;
-        margin-bottom: 5vh !important;
+    .container_in_company {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        position: relative;
+        border-radius: 15px;
     }
 
-    .advantage {
-        flex: 0 0 calc(50% - 15px) !important;
-        max-width: calc(50% - 15px) !important;
-        padding: 10px;
-        box-sizing: border-box;
+    .container_in_company img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 70%;
+        max-height: 70%;
+        margin: 0;
     }
 
-    .advantage_img {
-        height: 100px;
-        margin: 0 auto;
+    .name_company {
+        font-size: clamp(12px, 3vw, 14px);
+        margin-top: 1vh;
+        text-align: center;
+        line-height: 1.2;
     }
 
-    .advantage_img img {
-        width: 50px !important;
-        height: 50px !important;
-        margin: 0 !important;
+    .company:nth-child(n+4) {
+        display: none;
     }
 
-    .p_advantage {
-        font-size: 14px !important;
-        line-height: 1.4 !important;
-        text-align: center !important;
-        br { display: none; }
+    .questions {
+        padding: 5vh 5%;
     }
 
-    .advantages_handler {
-        margin: 3vh 0 !important;
-        img { width: 20px; }
+    .remaining_questions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4vh;
+        flex-wrap: nowrap;
     }
 
-    .p_advantages {
-        font-size: 22px !important;
-        margin: 0 10px !important;
+    .remaining_questions_p {
+        font-size: clamp(24px, 6vw, 32px);
+        margin-right: 15px;
+        white-space: nowrap;
     }
 
+    .remaining_questions img {
+        width: clamp(30px, 8vw, 40px);
+        height: auto;
+    }
+
+    .send_request {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .send_request_p {
+        font-size: clamp(16px, 4vw, 18px);
+        text-align: center;
+        line-height: 1.4;
+        max-width: 90%;
+    }
+
+    .vert_line {
+        display: none;
+    }
+
+    .send_request_button {
+        font-size: clamp(16px, 4vw, 18px);
+        padding: 12px 35px;
+        white-space: nowrap;
+        box-shadow: 0px 3px 5px 0px #3132F4 inset, 0px 3px 0px 0px #0B0C88;
+    }
+
+    .send_request br {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .footer img {
+        width: 200px;
+        height: auto;
+        margin: 0;
+    }
+
+    .footer_p {
+        font-size: 16px;
+        order: 2;
+        margin: 0;
+    }
 }
 
 @media (max-width: 480px) {
-    .advantage {
-        width: 100% !important;
-        max-width: 300px;
-        min-width: auto;
+    .nav-link {
+        font-size: 12px;
+        padding: 0 5px;
     }
 
-    .p_advantages {
-        font-size: 24px;
+    .card {
+        min-height: 250px;
     }
 
-    .p_advantage {
+    .description {
         font-size: 14px;
     }
 
-    .advantage {
-        flex: 0 0 100% !important;
-        max-width: 280px !important;
+    .request {
+        font-size: 16px;
+        padding: 8px 20px;
     }
-    
-    .p_advantage {
-        font-size: 12px !important;
+
+    .product_card {
+        height: 180px;
+    }
+
+    .advantage_img {
+        height: 120px;
+    }
+
+    .container_in_company {
+        width: 120px;
+        height: 120px;
+    }
+
+    .send_request_button {
+        font-size: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .footer img {
+        width: 200px;
+        height: auto;
+        margin: 0;
+    }
+
+    .footer_p {
+        font-size: 16px;
+        order: 2;
+        margin: 0;
     }
 }
 
+@media (max-width: 1024px) {
+    .background_image_product {
+        background-size: contain;
+        background-position: center;
+    }
+
+    .row::before {
+        display: none;
+    }
+}
+
+@media (hover: none) {
+    .nav-link {
+        padding: 5px;
+    }
+}
